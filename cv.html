@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Martin Perez | Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f5f7;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .cv-container {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .sidebar {
+      background: #111827;
+      color: white;
+      padding: 50px 35px;
+    }
+
+    .main-content {
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .role {
+      font-size: 1.1rem;
+      color: #9ca3af;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+      color: #60a5fa;
+      font-weight: 700;
+    }
+
+    .sidebar p,
+    .sidebar li,
+    .sidebar a {
+      color: #d1d5db;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .main-role {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 35px;
+      font-weight: 500;
+    }
+
+    .profile-text {
+      color: #4b5563;
+      font-size: 1rem;
+    }
+
+    .project {
+      margin-bottom: 28px;
+    }
+
+    .project h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .project p {
+      color: #4b5563;
+      margin-bottom: 10px;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      background: #e5e7eb;
+      color: #111827;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .experience-item,
+    .education-item {
+      margin-bottom: 25px;
+    }
+
+    .experience-item h3,
+    .education-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    .experience-item span,
+    .education-item span {
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 900px) {
+      .cv-container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar,
+      .main-content {
+        padding: 40px 30px;
+      }
+
+      .main-title {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .cv-container {
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+
+    <aside class="sidebar">
+      <h1>Daniel<br>Martin Perez</h1>
+      <div class="role">Creative Developer</div>
+
+      <div class="section">
+        <div class="section-title">Contacto</div>
+        <ul>
+          <li>Barcelona, España</li>
+          <li>659 629 469</li>
+          <li>damape1989@gmail.com</li>
+          <li><a href="https://danigator.github.io/" target="_blank">Portfolio</a></li>
+          <li><a href="https://github.com/danigatoR" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/danielmartinprojects/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://danigator.itch.io/little-grey-adventure" target="_blank">itch.io</a></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Tecnologías</div>
+        <ul>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>Git & GitHub</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>Blender</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <ul>
+          <li>Pixel Art</li>
+          <li>Ilustración Digital</li>
+          <li>Animación 2D</li>
+          <li>Diseño Visual</li>
+          <li>Videojuegos</li>
+          <li>Creative Development</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Idiomas</div>
+        <ul>
+          <li>Español — Nativo</li>
+          <li>Catalán — Nativo</li>
+          <li>Inglés — Alto escrito y lectura</li>
+          <li>Inglés hablado — Básico/Intermedio</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <div class="main-title">Creative Developer</div>
+      <div class="main-role">
+        Desarrollo creativo, videojuegos y diseño interactivo
+      </div>
+
+      <section class="section">
+        <div class="section-title">Perfil</div>
+        <p class="profile-text">
+          Creative Developer con experiencia en desarrollo web, diseño visual y creación de videojuegos. Perfil multidisciplinar orientado a experiencias interactivas, combinando programación, ilustración, animación 2D y diseño digital.
+          
+          Experiencia desarrollando proyectos completos de forma independiente, desde la programación hasta el apartado artístico y visual.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Proyecto Destacado</div>
+
+        <div class="project">
+          <h3>Little Grey Adventure</h3>
+
+          <p>
+            Endless runner 2D desarrollado de forma independiente, incluyendo programación, arte, animaciones y diseño visual.
+          </p>
+
+          <p>
+            Proyecto enfocado en creatividad visual, experiencia interactiva y desarrollo completo de videojuego indie.
+          </p>
+
+          <div class="tag-container">
+            <div class="tag">Game Development</div>
+            <div class="tag">Pixel Art</div>
+            <div class="tag">2D Animation</div>
+            <div class="tag">Creative Coding</div>
+            <div class="tag">Illustration</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Experiencia</div>
+
+        <div class="experience-item">
+          <h3>Freelance Creative Developer</h3>
+          <span>Proyectos independientes y colaboraciones</span>
+
+          <p class="profile-text" style="margin-top: 10px;">
+            Desarrollo de proyectos visuales y multimedia para clientes y colaboraciones creativas. Diseño gráfico, ilustración digital, assets visuales y desarrollo de pequeños proyectos interactivos.
+        </div>
+      </section>
+
+      <div class="experience-item">
+          <h3>Ilustrador tradicional y digital</h3>
+          <span>Proyectos independientes y colaboraciones</span>
+
+          <p class="profile-text" style="margin-top: 10px;">
+            Experiencia previa como ilustrador freelance, trabajando en ilustración tradicional y digital. Creación de personajes y entornos, sketching y storyboarding. Conocimientos desarrollados durante los estudios de Artes Gráficas e Ilustración y aplicados en proyectos creativos antes de especializarme en desarrollo.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Formación</div>
+
+        <div class="education-item">
+          <h3>Técnico Superior en Artes Gráficas e Ilustración</h3>
+        </div>
+
+        <div class="education-item">
+          <h3>Máster en Desarrollo Full Stack</h3>
+          <span>Actualmente en curso</span>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
