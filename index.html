@@ -49,46 +49,15 @@
   .chip { background:#eff6ff; color:#1e40af; border:1px solid #dbeafe; padding:4px 8px; border-radius:5px; font-size:.72rem; font-weight:500; }
   .small { font-size:.76rem; color:#4b5563; }
   @media(max-width:760px) { body { padding:0; } .cv { grid-template-columns:1fr; } aside,main { padding:26px 24px; } .portrait { width:104px;height:104px; } .name { font-size:1.55rem; } h1 { font-size:1.8rem; } }
-  @page { size:A4 portrait; margin:0; }
+  @page { size:A4; margin:8mm; }
   @media print {
-    html, body { width:210mm; height:297mm; margin:0 !important; padding:0 !important; background:#fff; }
-    body { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-    .cv {
-      width:210mm; height:297mm; max-width:none; margin:0;
-      grid-template-columns:64mm minmax(0,1fr);
-      box-shadow:none; overflow:hidden; border-radius:0;
-    }
-    aside { padding:9mm 6mm 7mm; }
-    main {
-      padding:10mm 8.5mm 9mm;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      gap:2mm;
-    }
-    .portrait { width:34mm; height:34mm; margin-bottom:4mm; border-width:0.7mm; }
-    .name { font-size:16.5pt; line-height:1.08; }
-    .role { font-size:9pt; margin-top:2mm; }
-    .tagline { font-size:7.5pt; margin-top:1.5mm; }
-    .side-section { margin-top:5.5mm; }
-    .side-title,.section-title { font-size:7.4pt; letter-spacing:1.1px; margin-bottom:2.2mm; }
-    .side-list { gap:1.4mm; font-size:7.8pt; line-height:1.35; }
-    .side-note { font-size:7.8pt; line-height:1.4; }
-    .main-header { padding-bottom:3.5mm; margin-bottom:0; }
-    .eyebrow { font-size:7.4pt; margin-bottom:1.8mm; }
-    h1 { font-size:22pt; line-height:1.08; }
-    .subtitle { font-size:9pt; margin-top:2.2mm; }
-    .section { margin-bottom:0; break-inside:avoid; }
-    .profile { font-size:8.6pt; line-height:1.48; }
-    .project { margin-bottom:3.2mm; break-inside:avoid; }
-    .project-head { gap:2mm; }
-    .project h3,.experience h3,.education h3 { font-size:9pt; }
-    .project a { font-size:7.4pt; }
-    .project p,.experience p,.education p { font-size:8.1pt; line-height:1.45; margin-top:1.2mm; }
-    .tech { font-size:7.5pt !important; }
-    .meta { font-size:7.5pt; margin-top:.7mm; }
-    .education-item { margin-bottom:2.4mm; }
-    .small { font-size:7.8pt; line-height:1.45; }
+    body { padding:0; background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .cv { width:100%; max-width:none; grid-template-columns:245px minmax(0,1fr); box-shadow:none; overflow:visible; }
+    aside { padding:21px 19px; } main { padding:23px 27px; }
+    .portrait { width:104px; height:104px; margin-bottom:13px; }
+    .name { font-size:1.5rem; } h1 { font-size:1.8rem; }
+    .side-section { margin-top:17px; } .section { margin-bottom:14px; }
+    .project { margin-bottom:10px; }
     a { text-decoration:none; }
   }
 </style>
@@ -114,9 +83,16 @@
     </section>
 
     <section class="side-section">
-      <h2 class="side-title">QA y desarrollo</h2>
+      <h2 class="side-title">Herramientas QA</h2>
       <ul class="side-list">
-        <li>Python</li><li>Pytest</li><li>Playwright</li><li>Requests · API Testing</li><li>SQL · SQLite</li><li>Git y GitHub</li><li>Linux y terminal</li><li>HTML</li>
+        <li>Python · Pytest</li><li>Playwright · Requests</li><li>API Testing</li><li>SQL · SQLite</li><li>Git y GitHub</li><li>Linux y terminal</li>
+      </ul>
+    </section>
+
+    <section class="side-section">
+      <h2 class="side-title">Herramientas de diseño</h2>
+      <ul class="side-list">
+        <li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>Blender 3D</li><li>HTML</li>
       </ul>
     </section>
 
@@ -172,6 +148,7 @@
         <h3>Ilustrador y diseñador gráfico freelance</h3>
         <div class="meta">Proyectos independientes y colaboraciones · Aproximadamente 15 años</div>
         <p>Desarrollo de ilustraciones, libros para colorear, personajes, flyers, cartelería y piezas visuales para clientes y proyectos independientes. Adaptación de estilos y propuestas a distintos objetivos, desde la idea inicial hasta la pieza final.</p>
+        <p class="tech">Photoshop · Illustrator · InDesign · Blender 3D · HTML</p>
       </div>
     </section>
 
